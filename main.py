@@ -5,6 +5,8 @@ no_of_time_asking = 14
 current_number_table = random.choice(numbers)
 
 while no_of_time_asking > 0:
+    if numbers == []:
+        break
     current_number = random.choice(numbers)
     current_number_index = numbers.index(current_number)
     numbers_0_9 = list(range(1,11))
